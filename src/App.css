@@ -1,8 +1,6 @@
 body {
   margin: 0;
   background-color: #D4E6F0;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 
@@ -307,13 +305,19 @@ h2 {
   } 
 
   .sliderImg {
-    width: 300px;
+    width: 280px;
     height: auto;
   }
 
   .heading {
+    right: 0%;
     top: 15%;
     left: 15%;
+  }
+
+
+  .slide{
+width: auto;
   }
 
   .btnImg {
@@ -344,7 +348,7 @@ h2 {
 }
 
 .leftBtn, .rightBtn {
-  padding: 20px;
+  padding: 0px 15px;
 }
 
 } 
