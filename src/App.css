@@ -23,7 +23,7 @@ nav {
 }
 
 .homeCont {
-  background-image: url("mainImg.jpeg");
+  background-image: url("./img/mainImg.jpeg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -122,7 +122,7 @@ h2 {
   width: 100%;
   padding: 20px 0px 30px 0px;
   background-size: cover;
-  background-image: url("backImg.jpeg");
+  background-image: url("./img/backImg.jpeg");
 }
 
 .listEvents {
@@ -162,7 +162,7 @@ h2 {
 /* MENU PAGE */
 
 .mainMenu {
-  background-image: url("menuPage.png");
+  background-image: url("./img/menuPage.png");
   background-size: cover;
 }
 
@@ -228,7 +228,7 @@ h2 {
 
 .aboutCont {
   background-size: cover;
-  background-image: url("backImg.jpeg");
+  background-image: url("./img/backImg.jpeg");
 }
 
 .headingAbout {
