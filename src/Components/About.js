@@ -1,15 +1,27 @@
-import chef from "./aboutImg/chef.png";
-import hands from "./aboutImg/hands.png";
+import chef from "../aboutImg/chef.png";
+import hands from "../aboutImg/hands.png";
+import { motion } from "framer-motion";
 
 function About() {
   return (
     <div className="aboutCont">
-      <div className="headingAbout">
+      <motion.div 
+      initial={{ opacity: 0, x: -200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1 }}
+      className="headingAbout">
         <h2>The Story</h2>
-      </div>
+      </motion.div>
 
-      <div className="chef">
-        <img className="aboutImg" src={chef} alt="chef" />
+      <motion.div 
+      initial={{ opacity: 0, x: -200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1 }}
+      className="chef">
+        <motion.img
+        whileHover={{ scale: 1.2}
+      } 
+        className="aboutImg" src={chef} alt="chef" />
         <div className="aboutText">
           <h3>Chefs Story</h3>
           <h4>FROM NAPLES WITH LOVE</h4>
@@ -22,9 +34,13 @@ function About() {
             gnocchi then is the same technique Andrea uses today.
           </p>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="story">
+      <motion.div 
+      initial={{ opacity: 0, y: 200 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      className="story">
         <div className="aboutText">
           <h3>Traditional Methodology</h3>
           <h4>CONTEMPORARY FLAVOURS</h4>
@@ -41,8 +57,10 @@ function About() {
             colour is fabulous too!
           </p>
         </div>
-        <img className="aboutImg" src={hands} alt="hands" />
-      </div>
+        <motion.img 
+        whileHover={{ scale: 1.2}}
+        className="aboutImg" src={hands} alt="hands" />
+      </motion.div>
     </div>
   );
 }

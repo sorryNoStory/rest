@@ -178,9 +178,16 @@ h2 {
   border-radius: 15px;
   font-size: 20px;
   font-family: 'Italiana', serif;
-  border: 1px solid #b8cbd387;
+  border: 1px solid #b8cbd33d;
   background-color:  #f67b46e5;
   color: #002C44;
+}
+
+.active {
+  border: 1px solid #F67C46;
+  border-radius: 15px;
+  background-color: #89d3f72e;
+  color: #fff;
 }
 
 .btnMenu:hover {

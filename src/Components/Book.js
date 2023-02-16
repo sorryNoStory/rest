@@ -1,5 +1,6 @@
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
+import { motion } from 'framer-motion';
 
 function Book() {
   function Alert() {
@@ -17,9 +18,18 @@ function Book() {
   }
 
   return (
-    <button className="btn" onClick={Alert}>
+    <motion.button 
+    initial={{ y: -15, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={
+        {
+          duration: 2,
+          delay: 0.5
+        }
+      }
+    className="btn" onClick={Alert}>
       Book now →
-    </button>
+    </motion.button>
   );
 }
 
